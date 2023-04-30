@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/encript.js"></script>
+    <script src="js/boton_op.js"></script>
+    
+    <title>Encriptador</title> 
+</head>
+<body>
+
+    <header class="hero">
+
+        <div class="hero_container container">
+
+            <figure class="hero_picture"> 
+                <img src="./assets/gif 1.gif" alt="gif de mr.robot" class="hero_gif"> 
+            </figure>
+
+           <div class="hero__texts">
+              <h1 class="hero_title">Encrypter</h1>
+           </div>
+
+           <figure class="hero_picture"> 
+                <img src="./assets/gif 1.gif" alt="gif de mr.robot" class="hero_gif"> 
+           </figure>
+
+        </div>
+
+    
+    </header>
+
+    <main> 
+        <!-- contenedor para las cards del encriptador y el boton -->
+        <div id="main" class="main_container container">
+
+
+            <!-- contenedor para las cards -->
+            <div class="cards_container" id="encrypter_menu">
+                <!-- texto a encryptar-->
+                <div class="card_1 card" id="text_1">
+                
+                    <div class="card_instructions dates_enter">
+                     
+                        <h2 class="title_card">Welcome Friend!</h2>
+                        <p class="text_card">write your text and select the acction what you want to do with the buttons encrypt or anencript  </p>
+                    
+                    </div>
+                
+                  <textarea name="text" id="input1" placeholder="write your message here" class="text_a"></textarea>
+
+                    <div class="button_container">
+                        <button class="button_en btn_in" id="btn-encript" onclick="encriptar()">encript</button>
+                        <button class="button_anen btn_in" id="btn-anencript" onclick="desencriptar()">anencript</button>
+                    </div> 
+               
+                </div>
+
+                <!-- texto como resultado -->
+                <div class="card_2 card">
+                    <div class="card_instructions dates_result">
+                 
+                        <h2 class="title_card">the result:</h2>
+                        <p class="text_card">here it's your result, you can copy using the button in the bottom or only read your message</p>
+                
+                    </div>
+                
+                    <textarea name="text" id="result" placeholder="result" class="text_a" ></textarea>
+                
+                    <button class="button_copy btn_in" id="copy-btn">copy</button>   
+               
+                </div>
+            
+            </div>
+            
+            <!-- boton para mostrar y ocultar el encriptador -->
+                <button id="boton_open" class="boton_open">open encrypter</button>
+            
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <!-- contenedor del footer -->
+        <div class="footer_container container">
+            <!-- contenedor de los logos para las redes sociales -->
+            <nav class="contact_section">
+                <a href="https://www.linkedin.com/in/jonathan-xavier-alvarez-cari%C3%B1o-4a609a243/" class="contact_element">
+                    <img src="assets/linkedin-icon.svg" alt="linkedin-icon" class="contact_logo linkedin">
+                </a>
+
+                <a href="https://github.com/Xavxd" class="contact_element">
+                    <img src="assets/github-icon.svg" alt="github-icon" class="contact_logo github">
+                </a>
+
+                <a href="https://twitter.com/punk_jx" class="contact_element">
+                    <img src="assets/twitter-icon.svg" alt="twitter-icon" class="contact_logo twitter">
+                </a>
+            </nav>
+
+            
+            <p class="creator">created by: Jonathan Xavier Alvarez Cariño</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

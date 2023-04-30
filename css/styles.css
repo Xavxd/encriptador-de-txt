@@ -1,0 +1,423 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+ /* font-family: 'Roboto', sans-serif; title-principal*/
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+ /*font-family: 'oswald', sans-serif; title-cards */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+ /*font-family: 'Inter', sans-serif; texto de las cards*/
+
+ :root{
+    --background: rgba(0, 0, 0, 0.929);
+    --min-heigth: 350px;
+ }
+ 
+ *{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box; 
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*hero section*/
+.hero{
+    background: var(--background);
+    background-position: center;
+    background-size: contain;
+    padding: .5em;
+    min-height: var(--m-heigth);
+    overflow: hidden;
+}
+
+.hero_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_picture{
+    max-width: 160px;
+    max-height: 160px;
+}
+
+.hero_gif{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_title{
+    margin: 0;
+    color: brown;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*main section*/
+main{
+    background-image: url(../assets/backgroud\ para\ el\ encriptador.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    height: 90vh;
+    padding: 2rem;
+}
+
+
+.main_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 1.5rem;
+}
+
+
+/*---cards---*/
+
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+    transform: translateY(-200%);
+    transition: transform 1s;
+}
+
+.cards_container--active{
+    transform: unset;
+    transition: transform 1s;
+
+}
+
+.card{
+    width: 40%;
+    background-color: rgba(34, 34, 34, 0.89);
+    color: #fff;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+
+
+.title_card{
+    font-family:'oswald', sans-serif;
+    font-size: 1.5rem;
+}
+.text_card{
+    font-size: 1em;
+    font-family: 'Inter', sans-serif; 
+}
+
+
+.text_a{
+    width: 100%;
+    min-height: 7em;
+    resize: none;
+    background-color: rgba(0, 0, 0, 0.56);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    padding: .3em;
+    border: none;
+}
+
+.text_a:focus{
+    outline: none;
+    border: 1px solid #ff0000;
+}
+
+
+/*contenedor de los botones para la card 1*/
+.button_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_in{
+    display: block;
+    margin: 0 .5em;
+    background-color: red;
+    padding: .3em 1em;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif; 
+    border: none;
+}
+
+.btn_in:hover{
+    cursor: pointer;
+    outline: 1px solid #ff4747;
+    box-shadow: 1px 1px 4px 5px #ff1f1f;
+}
+
+.button_copy{
+    display: block;
+    margin: 0 auto;
+}
+
+/*boton para abrir y cerrar el encriptador*/
+
+.boton_open{
+    display: inline-block;
+    margin-top: .5rem;
+    background-color: red;
+    padding: .7em 1em;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif; 
+    border: none;
+}
+
+.boton_open:hover{
+    cursor: pointer;
+    outline: 1px solid #ff4747;
+    box-shadow: 1px 1px 4px 5px #ff1f1f;
+}
+
+/*---footer---*/
+
+.footer{
+    background-color: var(--background);
+    color: #d0d0d0;
+    min-height: var(--m-heigth);
+    overflow: hidden;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 0;
+    gap: .5em;
+}
+
+.contact_section{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.contact_element{
+    width: 50px;
+    height: 50px;
+    margin: 0 1.5em .5em;
+}
+
+
+.contact_logo:hover{
+    width: 55px;
+    height: 55px;
+}
+
+
+.twitter{
+    border: #fff 1px solid;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+}
+
+.creator{
+    font-family: 'oswald', sans-serif;
+}
+
+.creator:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Responsive*/
+
+
+@media (max-width:1000px) {
+    /*heder*/  
+    .hero{
+        height: 100px;
+        padding: .5em 0 .5em;
+    }
+
+    .hero_title{
+        font-size: 2rem;
+    }
+
+    /*main*/
+
+    .cards_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .title_card{
+        font-size: 1.2rem;
+    }
+    .text_card{
+        font-size: .7rem;
+    }
+
+    .btn_in{
+        padding: .5em .9em;
+        border-radius: 10px;
+        font-size: .9em; 
+    }
+
+    /*footer*/
+    
+    .creator{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    /*heder*/
+    .hero_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hero_title{
+        font-size: 2rem;
+    }
+
+    /*main*/
+
+    main{
+        height: 100vh;
+    }
+
+    /*footer*/
+    
+    .contact_element{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .contact_logo:hover{
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    /*heder*/
+
+    .hero_title{
+        font-size: 2rem;
+    }
+
+    .hero_picture{
+        width: 90px;
+        height: 90px;
+        
+    }
+
+    .hero_gif{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*main*/
+
+    .main_container{
+        padding: 10px;
+    }
+
+    .cards_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        transform: unset;
+    }
+
+    .card{
+        width: 95%;
+        padding: .5rem;
+    }
+
+    .boton_open{
+        display: none;
+    }
+
+    /*footer*/
+
+    .contact_element{
+        width: 45px;
+        height: 45px;
+        margin-bottom: .2rem;
+    }
+    
+    .contact_logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .creator{
+        font-size: .9rem;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    /*heder*/
+    .hero_title{
+        font-size: 1.7rem;
+    }
+
+    .hero_picture{
+        width: 70px;
+        height: 70px;
+    }
+
+    .hero_gif{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*footer*/
+
+    .contact_element{
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact_logo{
+        width: 100%;
+        height: 100%;
+    }
+
+}
